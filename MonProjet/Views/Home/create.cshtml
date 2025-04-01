@@ -1,0 +1,38 @@
+@model IEnumerable<Personne>
+
+<h2>Add a recipe</h2>
+
+<form method="post">
+    <div class="form-group">
+        <label for="Nom">Name</label>
+        <input type="text" class="form-control" id="Nom" name="Nom" required />
+    </div>
+    <div class="form-group">
+        <label for="Time">Time</label>
+        <input type="text" class="form-control" id="Time" name="Time" required />
+    </div>
+    
+    <div class="form-group">
+        <label for="Difficulty">Difficulty</label>
+        <input type="text" class="form-control" id="Difficulty" name="Difficulty" required />
+    </div>
+    <div class="form-group">
+        <label for="Like">Number of likes</label>
+        <input type="text" class="form-control" id="Like" name="Like" required />
+    </div>
+    <div class="form-group">
+        <label for="Ingredients">Ingredients</label>
+        <input type="text" class="form-control" id="Ingredients" name="Ingredients" required />
+    </div>
+    <div class="form-group">
+        <label for="Process">Process</label>
+        <input type="text" class="form-control" id="Process" name="Process" required />
+    </div>
+    <div class="form-group">
+        <label for="Tips">Tips and Tricks</label>
+        <input type="text" class="form-control" id="Tips" name="Tips" required />
+    </div>
+   
+
+    <button type="submit" class="btn btn-primary">Add</button>
+</form>

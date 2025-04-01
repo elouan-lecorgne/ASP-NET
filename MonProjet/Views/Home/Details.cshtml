@@ -1,0 +1,39 @@
+@model Personne
+
+<h2>Recipe Details</h2>
+
+<table class="table">
+    <tr>
+        <th>ID :</th>
+        <td>@Model.Id</td>
+    <tr>
+        <th>Name :</th>
+        <td>@Model.Nom</td>
+    </tr>
+    <tr>
+        <th>Time :</th>
+        <td>@Model.Time</td>
+    </tr>
+    <tr>
+        <th>Difficulty :</th>
+        <td>@Model.Difficulty</td>
+    </tr>
+    <tr>
+        <th>Likes :</th>
+        <td>@Model.Like</td>
+    </tr>
+    <tr>
+        <th>Ingredients :</th>
+        <td>@Model.Ingredients</td>
+    </tr>
+    <tr>
+        <th>Process :</th>
+        <td>@Model.Process</td>
+    </tr>
+    <tr>
+        <th>Tips :</th>
+        <td>@Model.Tips</td>
+    </tr>
+</table>
+
+<a href="@Url.Action("Index", "Home")" class="btn btn-primary">Back</a>
